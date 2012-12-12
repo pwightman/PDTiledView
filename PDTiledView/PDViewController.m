@@ -44,12 +44,11 @@
 		
 	};
 	
-	_tiledView.controlForIndexPathBlock = ^UIControl *(PDIndexPath indexPath) {
+	_tiledView.controlForTileAtIndexPathBlock = ^UIControl *(PDIndexPath indexPath) {
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 		button.backgroundColor = [self randomColor];
 		button.layer.borderColor = [[UIColor blackColor] CGColor];
 		button.layer.borderWidth = 1;
-		button.titleLabel.text = [NSString stringWithFormat:@"%@", @(indexPath.tile)];
 		return button;
 	};
 	

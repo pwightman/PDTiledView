@@ -141,7 +141,7 @@
 		tiledScrollView.contentSize = contentSize;
 		
 		for (NSInteger i = 0; i < numberOfTiles; i++) {
-			UIControl *control = _controlForIndexPathBlock(PDIndexPathMake(section, i));
+			UIControl *control = _controlForTileAtIndexPathBlock(PDIndexPathMake(section, i));
 			
 			
 			CGRect frame = CGRectZero;

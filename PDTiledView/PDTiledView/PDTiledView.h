@@ -29,7 +29,7 @@ PDIndexPath PDIndexPathMake(NSInteger section, NSInteger tile) {
 @property (strong, nonatomic) NSInteger (^numberOfSectionsBlock)();
 @property (strong, nonatomic) NSInteger (^numberOfTilesInSectionBlock)(NSInteger section);
 @property (strong, nonatomic) UIControl* (^controlForSectionBlock)(NSInteger section);
-@property (strong, nonatomic) UIControl* (^controlForIndexPathBlock)(PDIndexPath indexPath);
+@property (strong, nonatomic) UIControl* (^controlForTileAtIndexPathBlock)(PDIndexPath indexPath);
 
 #pragma Optional Blocks
 // Default is the width of this PDTiledView, so it will be square
