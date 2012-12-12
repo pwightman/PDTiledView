@@ -16,14 +16,12 @@ Very similar to `UITableView`, but uses `sections` and `tiles` instead of `secti
 ```objective-c
 PDTiledView *tiledView = ...;
 
-tiledView.numberOfSectionsBlock = ^NSInteger{ return 4; };
+tiledView.numberOfSectionsBlock = ^NSInteger { return 4; };
 
-tiledViewdView.numberOfTilesInSectionBlock = ^NSInteger (NSInteger section) { 
-    return 20; 
-};
+tiledViewdView.numberOfTilesInSectionBlock = ^NSInteger (NSInteger section) { return 20; };
 ```
 
-All `sections` and `rows` are just UIControl subclasses, such as UIButton or a custom control of your making. (This may switch to UIView later, not sold on it yet).
+All `sections` and `tiles` are just `UIControl` subclasses, such as `UIButton` or a custom control of your making. (This may switch to UIView later, not sold on it yet).
 
 ```objective-c
 tiledView.controlForSectionBlock = ^UIControl *(NSInteger section) {
@@ -38,18 +36,32 @@ tiledView.controlForTileAtIndexPathBlock = ^UIControl *(PDTiledViewDIndexPath in
 };
 ```
 
+As a result of block-based delegation, you should explicitly call `reloadData` the first time the view will be displayed.
+
+```objective-c
+[tiledView reloadData];
+```
+
+You can also programmatically select a section by calling `selectSection:animated:`.
+
+```objective-c
+[tiledView selectSection:0 animated:NO];
+```
+
 There are also optional blocks to further customize how you like. They match up with their `UITableViewDelegate/DataSource` counterparts:
 
 * `heightForSectionControlBlock`
 * `heightForTilesInSectionBlock`
 * `didSelectSectionBlock`
 * `didSelectTileAtIndexPathBlock`
-* `willDisplaySectionBlock`
-* `willDisplayTileAtIndexPathBlock`
+* `willDisplaySectionBlock` 
+* `willDisplayTileAtIndexPathBlock` (This is where you should apply styling that is `frame`-dependent, as its final dimensions will be set. Same with `willDisplaySectionBlock`)
 
 ## Discussion
 
 The internal implementation does not use `UITableView`s, so while some things are cached, tiles are not loaded on-the-fly and cached as rows are in UITableView. This shouldn't be a big deal unless you are displaying 1,000s of tiles or tiles are extremely rendering intensive. Pull requests are more than welcome to help implement caching, or perhaps to use `UITableView`s internally.
+
+This also means that `controlForSectionBlock` and `controlForTileAtIndexPathBlock` are not called multiple times, usually just once.
 
 ## Contributing
 
