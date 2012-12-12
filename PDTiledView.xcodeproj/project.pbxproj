@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F45E43C1678660B00D5C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45E43B1678660B00D5C39A /* UIKit.framework */; };
+		5F45E43E1678660B00D5C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45E43D1678660B00D5C39A /* Foundation.framework */; };
+		5F45E4401678660B00D5C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45E43F1678660B00D5C39A /* CoreGraphics.framework */; };
+		5F45E4461678660B00D5C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E4441678660B00D5C39A /* InfoPlist.strings */; };
+		5F45E4481678660B00D5C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F45E4471678660B00D5C39A /* main.m */; };
+		5F45E44C1678660B00D5C39A /* PDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F45E44B1678660B00D5C39A /* PDAppDelegate.m */; };
+		5F45E44E1678660B00D5C39A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E44D1678660B00D5C39A /* Default.png */; };
+		5F45E4501678660B00D5C39A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E44F1678660B00D5C39A /* Default@2x.png */; };
+		5F45E4521678660B00D5C39A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E4511678660B00D5C39A /* Default-568h@2x.png */; };
+		5F45E4551678660B00D5C39A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E4531678660B00D5C39A /* MainStoryboard_iPhone.storyboard */; };
+		5F45E4581678660B00D5C39A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E4561678660B00D5C39A /* MainStoryboard_iPad.storyboard */; };
+		5F45E45B1678660B00D5C39A /* PDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F45E45A1678660B00D5C39A /* PDViewController.m */; };
+		5F45E4631678660B00D5C39A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45E4621678660B00D5C39A /* SenTestingKit.framework */; };
+		5F45E4641678660B00D5C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45E43B1678660B00D5C39A /* UIKit.framework */; };
+		5F45E4651678660B00D5C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45E43D1678660B00D5C39A /* Foundation.framework */; };
+		5F45E46D1678660B00D5C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F45E46B1678660B00D5C39A /* InfoPlist.strings */; };
+		5F45E4701678660B00D5C39A /* PDTiledViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F45E46F1678660B00D5C39A /* PDTiledViewTests.m */; };
+		5F45E47C1678669F00D5C39A /* PDTiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F45E47B1678669F00D5C39A /* PDTiledView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F45E4661678660B00D5C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F45E42E1678660B00D5C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F45E4361678660B00D5C39A;
+			remoteInfo = PDTiledView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F45E4371678660B00D5C39A /* PDTiledView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDTiledView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F45E43B1678660B00D5C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F45E43D1678660B00D5C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F45E43F1678660B00D5C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F45E4431678660B00D5C39A /* PDTiledView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PDTiledView-Info.plist"; sourceTree = "<group>"; };
+		5F45E4451678660B00D5C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F45E4471678660B00D5C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F45E4491678660B00D5C39A /* PDTiledView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDTiledView-Prefix.pch"; sourceTree = "<group>"; };
+		5F45E44A1678660B00D5C39A /* PDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDAppDelegate.h; sourceTree = "<group>"; };
+		5F45E44B1678660B00D5C39A /* PDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDAppDelegate.m; sourceTree = "<group>"; };
+		5F45E44D1678660B00D5C39A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5F45E44F1678660B00D5C39A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5F45E4511678660B00D5C39A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5F45E4541678660B00D5C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5F45E4571678660B00D5C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		5F45E4591678660B00D5C39A /* PDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDViewController.h; sourceTree = "<group>"; };
+		5F45E45A1678660B00D5C39A /* PDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDViewController.m; sourceTree = "<group>"; };
+		5F45E4611678660B00D5C39A /* PDTiledViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDTiledViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F45E4621678660B00D5C39A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5F45E46A1678660B00D5C39A /* PDTiledViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PDTiledViewTests-Info.plist"; sourceTree = "<group>"; };
+		5F45E46C1678660B00D5C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F45E46E1678660B00D5C39A /* PDTiledViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTiledViewTests.h; sourceTree = "<group>"; };
+		5F45E46F1678660B00D5C39A /* PDTiledViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTiledViewTests.m; sourceTree = "<group>"; };
+		5F45E47A1678669F00D5C39A /* PDTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTiledView.h; path = PDTiledView/PDTiledView.h; sourceTree = "<group>"; };
+		5F45E47B1678669F00D5C39A /* PDTiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDTiledView.m; path = PDTiledView/PDTiledView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F45E4341678660B00D5C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F45E43C1678660B00D5C39A /* UIKit.framework in Frameworks */,
+				5F45E43E1678660B00D5C39A /* Foundation.framework in Frameworks */,
+				5F45E4401678660B00D5C39A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F45E45D1678660B00D5C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F45E4631678660B00D5C39A /* SenTestingKit.framework in Frameworks */,
+				5F45E4641678660B00D5C39A /* UIKit.framework in Frameworks */,
+				5F45E4651678660B00D5C39A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F45E42C1678660B00D5C39A = {
+			isa = PBXGroup;
+			children = (
+				5F45E4411678660B00D5C39A /* PDTiledView */,
+				5F45E4681678660B00D5C39A /* PDTiledViewTests */,
+				5F45E43A1678660B00D5C39A /* Frameworks */,
+				5F45E4381678660B00D5C39A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F45E4381678660B00D5C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E4371678660B00D5C39A /* PDTiledView.app */,
+				5F45E4611678660B00D5C39A /* PDTiledViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F45E43A1678660B00D5C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E43B1678660B00D5C39A /* UIKit.framework */,
+				5F45E43D1678660B00D5C39A /* Foundation.framework */,
+				5F45E43F1678660B00D5C39A /* CoreGraphics.framework */,
+				5F45E4621678660B00D5C39A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F45E4411678660B00D5C39A /* PDTiledView */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E4791678664A00D5C39A /* PDTiledView */,
+				5F45E44A1678660B00D5C39A /* PDAppDelegate.h */,
+				5F45E44B1678660B00D5C39A /* PDAppDelegate.m */,
+				5F45E4531678660B00D5C39A /* MainStoryboard_iPhone.storyboard */,
+				5F45E4561678660B00D5C39A /* MainStoryboard_iPad.storyboard */,
+				5F45E4591678660B00D5C39A /* PDViewController.h */,
+				5F45E45A1678660B00D5C39A /* PDViewController.m */,
+				5F45E4421678660B00D5C39A /* Supporting Files */,
+			);
+			path = PDTiledView;
+			sourceTree = "<group>";
+		};
+		5F45E4421678660B00D5C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E4431678660B00D5C39A /* PDTiledView-Info.plist */,
+				5F45E4441678660B00D5C39A /* InfoPlist.strings */,
+				5F45E4471678660B00D5C39A /* main.m */,
+				5F45E4491678660B00D5C39A /* PDTiledView-Prefix.pch */,
+				5F45E44D1678660B00D5C39A /* Default.png */,
+				5F45E44F1678660B00D5C39A /* Default@2x.png */,
+				5F45E4511678660B00D5C39A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F45E4681678660B00D5C39A /* PDTiledViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E46E1678660B00D5C39A /* PDTiledViewTests.h */,
+				5F45E46F1678660B00D5C39A /* PDTiledViewTests.m */,
+				5F45E4691678660B00D5C39A /* Supporting Files */,
+			);
+			path = PDTiledViewTests;
+			sourceTree = "<group>";
+		};
+		5F45E4691678660B00D5C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E46A1678660B00D5C39A /* PDTiledViewTests-Info.plist */,
+				5F45E46B1678660B00D5C39A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F45E4791678664A00D5C39A /* PDTiledView */ = {
+			isa = PBXGroup;
+			children = (
+				5F45E47A1678669F00D5C39A /* PDTiledView.h */,
+				5F45E47B1678669F00D5C39A /* PDTiledView.m */,
+			);
+			name = PDTiledView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F45E4361678660B00D5C39A /* PDTiledView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F45E4731678660B00D5C39A /* Build configuration list for PBXNativeTarget "PDTiledView" */;
+			buildPhases = (
+				5F45E4331678660B00D5C39A /* Sources */,
+				5F45E4341678660B00D5C39A /* Frameworks */,
+				5F45E4351678660B00D5C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDTiledView;
+			productName = PDTiledView;
+			productReference = 5F45E4371678660B00D5C39A /* PDTiledView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F45E4601678660B00D5C39A /* PDTiledViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F45E4761678660B00D5C39A /* Build configuration list for PBXNativeTarget "PDTiledViewTests" */;
+			buildPhases = (
+				5F45E45C1678660B00D5C39A /* Sources */,
+				5F45E45D1678660B00D5C39A /* Frameworks */,
+				5F45E45E1678660B00D5C39A /* Resources */,
+				5F45E45F1678660B00D5C39A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F45E4671678660B00D5C39A /* PBXTargetDependency */,
+			);
+			name = PDTiledViewTests;
+			productName = PDTiledViewTests;
+			productReference = 5F45E4611678660B00D5C39A /* PDTiledViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F45E42E1678660B00D5C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PD;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Parker Wightman Inc.";
+			};
+			buildConfigurationList = 5F45E4311678660B00D5C39A /* Build configuration list for PBXProject "PDTiledView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F45E42C1678660B00D5C39A;
+			productRefGroup = 5F45E4381678660B00D5C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F45E4361678660B00D5C39A /* PDTiledView */,
+				5F45E4601678660B00D5C39A /* PDTiledViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F45E4351678660B00D5C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F45E4461678660B00D5C39A /* InfoPlist.strings in Resources */,
+				5F45E44E1678660B00D5C39A /* Default.png in Resources */,
+				5F45E4501678660B00D5C39A /* Default@2x.png in Resources */,
+				5F45E4521678660B00D5C39A /* Default-568h@2x.png in Resources */,
+				5F45E4551678660B00D5C39A /* MainStoryboard_iPhone.storyboard in Resources */,
+				5F45E4581678660B00D5C39A /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F45E45E1678660B00D5C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F45E46D1678660B00D5C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F45E45F1678660B00D5C39A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F45E4331678660B00D5C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F45E4481678660B00D5C39A /* main.m in Sources */,
+				5F45E44C1678660B00D5C39A /* PDAppDelegate.m in Sources */,
+				5F45E45B1678660B00D5C39A /* PDViewController.m in Sources */,
+				5F45E47C1678669F00D5C39A /* PDTiledView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F45E45C1678660B00D5C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F45E4701678660B00D5C39A /* PDTiledViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F45E4671678660B00D5C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F45E4361678660B00D5C39A /* PDTiledView */;
+			targetProxy = 5F45E4661678660B00D5C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F45E4441678660B00D5C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F45E4451678660B00D5C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F45E4531678660B00D5C39A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F45E4541678660B00D5C39A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5F45E4561678660B00D5C39A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F45E4571678660B00D5C39A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5F45E46B1678660B00D5C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F45E46C1678660B00D5C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F45E4711678660B00D5C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F45E4721678660B00D5C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F45E4741678660B00D5C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDTiledView/PDTiledView-Prefix.pch";
+				INFOPLIST_FILE = "PDTiledView/PDTiledView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = ":w";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F45E4751678660B00D5C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDTiledView/PDTiledView-Prefix.pch";
+				INFOPLIST_FILE = "PDTiledView/PDTiledView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = ":w";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F45E4771678660B00D5C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PDTiledView.app/PDTiledView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDTiledView/PDTiledView-Prefix.pch";
+				INFOPLIST_FILE = "PDTiledViewTests/PDTiledViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5F45E4781678660B00D5C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PDTiledView.app/PDTiledView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDTiledView/PDTiledView-Prefix.pch";
+				INFOPLIST_FILE = "PDTiledViewTests/PDTiledViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F45E4311678660B00D5C39A /* Build configuration list for PBXProject "PDTiledView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F45E4711678660B00D5C39A /* Debug */,
+				5F45E4721678660B00D5C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F45E4731678660B00D5C39A /* Build configuration list for PBXNativeTarget "PDTiledView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F45E4741678660B00D5C39A /* Debug */,
+				5F45E4751678660B00D5C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F45E4761678660B00D5C39A /* Build configuration list for PBXNativeTarget "PDTiledViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F45E4771678660B00D5C39A /* Debug */,
+				5F45E4781678660B00D5C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F45E42E1678660B00D5C39A /* Project object */;
+}
