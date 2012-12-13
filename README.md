@@ -30,7 +30,7 @@ tiledView.controlForSectionBlock = ^UIControl *(NSInteger section) {
     return button;
 };
 
-tiledView.controlForTileAtIndexPathBlock = ^UIControl *(PDTiledViewDIndexPath indexPath) {
+tiledView.controlForTileAtIndexPathBlock = ^UIControl *(PDIndexPath indexPath) {
     UIButton *button = [UIButton buttonWithType:UIControlIButtonTypeCustom];
     return button;
 };
