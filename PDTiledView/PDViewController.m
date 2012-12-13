@@ -12,6 +12,7 @@
 
 @interface PDViewController ()
 @property (strong, nonatomic) IBOutlet PDTiledView *tiledView;
+@property (strong, nonatomic) IBOutlet UILabel *alertLabel;
 
 @end
 
@@ -67,11 +68,11 @@
 	_tiledView.heightForTilesInSectionBlock = ^CGFloat(NSInteger section) { return 60; };
 	
 	_tiledView.didSelectSectionBlock = ^(UIControl *sectionControl, NSInteger section) {
-		NSLog(@"Section selected %d", section);
+		_alertLabel.text = [NSString stringWithFormat:@"Section selected: %d", section];
 	};
 	
 	_tiledView.didSelectTileAtIndexPathBlock = ^(UIControl *tile, PDIndexPath indexPath) {
-		NSLog(@"IndexPath selected: %d, %d", indexPath.section, indexPath.tile);
+		_alertLabel.text = [NSString stringWithFormat:@"Section and tile selected: %d, %d", indexPath.section, indexPath.tile];
 	};
 	
 	[_tiledView reloadData];
@@ -92,4 +93,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+	[self setAlertLabel:nil];
+	[super viewDidUnload];
+}
 @end

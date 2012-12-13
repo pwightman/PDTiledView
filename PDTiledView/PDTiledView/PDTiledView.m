@@ -103,7 +103,7 @@
 	}
 	
 	
-	CGFloat animationDuration = (animated ? 0.2 : 0);
+	CGFloat animationDuration = (animated ? 0.3 : 0);
 	
 	CGRect selectedSectionFrame = [[_sectionControls objectAtIndex:section] frame];
 	
@@ -191,7 +191,7 @@
 	tiledScrollViewFrame.origin.y = (section + 1) * selectedSectionFrame.size.height;
 	tiledScrollViewFrame.size.height = _sectionsScrollView.frame.size.height - _sectionControls.count*selectedSectionFrame.size.height;
 	
-	[UIView animateWithDuration:0.2 animations:^{
+	[UIView animateWithDuration:animationDuration animations:^{
 		tiledScrollView.frame = tiledScrollViewFrame;
 	}];
 	

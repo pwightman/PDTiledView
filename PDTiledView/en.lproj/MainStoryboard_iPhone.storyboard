@@ -17,10 +17,18 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nfU-5F-DKP">
+                                <rect key="frame" x="0.0" y="220" width="242" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="alertLabel" destination="nfU-5F-DKP" id="aTu-5b-oCG"/>
                         <outlet property="tiledView" destination="f3t-iY-Eip" id="q4O-b1-r9V"/>
                     </connections>
                 </viewController>
@@ -35,6 +43,7 @@
         <class className="PDViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PDViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="alertLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="tiledView" candidateClass="PDTiledView"/>
             </relationships>
         </class>

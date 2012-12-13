@@ -404,11 +404,15 @@
 		5F45E4741678660B00D5C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PDTiledView/PDTiledView-Prefix.pch";
 				INFOPLIST_FILE = "PDTiledView/PDTiledView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06636398-C5D4-46E0-8FD7-AACCB6E6E5A7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "06636398-C5D4-46E0-8FD7-AACCB6E6E5A7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -416,11 +420,15 @@
 		5F45E4751678660B00D5C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PDTiledView/PDTiledView-Prefix.pch";
 				INFOPLIST_FILE = "PDTiledView/PDTiledView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06636398-C5D4-46E0-8FD7-AACCB6E6E5A7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "06636398-C5D4-46E0-8FD7-AACCB6E6E5A7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
