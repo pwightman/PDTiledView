@@ -61,9 +61,12 @@ There are also optional blocks to further customize how you like. They match up 
 
 ## Discussion
 
-The internal implementation does not use `UITableView`s, so while some things are cached, tiles are not loaded on-the-fly and cached as rows are in UITableView. This shouldn't be a big deal unless you are displaying 1,000s of tiles or tiles are extremely rendering intensive. Pull requests are more than welcome to help implement caching, or perhaps to use `UITableView`s internally.
+The internal implementation does not use `UITableView`s, so while some things are cached, tiles are not loaded 
+on-the-fly and cached as rows are in UITableView. This shouldn't be a big deal unless you are displaying 1,000s 
+of tiles or tiles are extremely rendering intensive. Pull requests are more than welcome to help implement caching, 
+or perhaps to use `UITableView`s internally.
 
-This also means that `controlForSectionBlock` and `controlForTileAtIndexPathBlock` are not called multiple times, usually just once.
+This also means that `controlForSectionBlock` and `controlForTileAtIndexPathBlock` are not called multiple times, usually just once per call to `reloadData`.
 
 ## Contributing
 
