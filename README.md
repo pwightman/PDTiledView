@@ -7,7 +7,7 @@ Accordion-style table view, with block-based delegation.
 
 ## Installation
 
-[CocoaPods](http://cocoapods.org) by putting `pod 'PDTiledView` in your `Podfile`, or you can drop `PDTiledView{.h,.m}` into your project.
+[CocoaPods](http://cocoapods.org) by putting `pod 'PDTiledView'` in your `Podfile`, or you can drop `PDTiledView{.h,.m}` into your project.
 
 ## Usage
 
