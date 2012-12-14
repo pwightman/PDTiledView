@@ -3,6 +3,8 @@ PDTiledView
 
 Accordion-style table view, with block-based delegation.
 
+![PDTiledView Screenshot](https://raw.github.com/pwightman/PDTiledView/master/screenshots/screenshot.png)
+
 ## Installation
 
 [CocoaPods](http://cocoapods.org) by putting `pod 'PDTiledView` in your `Podfile`, or you can drop `PDTiledView{.h,.m}` into your project.
