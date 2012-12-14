@@ -7,7 +7,8 @@ Accordion-style table view, with block-based delegation.
 
 ## Installation
 
-[CocoaPods](http://cocoapods.org) by putting `pod 'PDTiledView'` in your `Podfile`, or you can drop `PDTiledView{.h,.m}` into your project.
+[CocoaPods](http://cocoapods.org) by putting `pod 'PDTiledView'` in your `Podfile`, or you can drop `PDTiledView{.h,.m}` 
+into your project. Uses ARC and requires iOS 5.1 or higher.
 
 ## Usage
 
@@ -64,7 +65,7 @@ There are also optional blocks to further customize how you like. They match up 
 ## Discussion
 
 The internal implementation does not use `UITableView`s, so while some things are cached, tiles are not loaded 
-on-the-fly and cached as rows are in UITableView. This shouldn't be a big deal unless you are displaying 1,000s 
+on-the-fly and cached as rows are in `UITableView`. This shouldn't be a big deal unless you are displaying 1,000s 
 of tiles or tiles are extremely rendering intensive. Pull requests are more than welcome to help implement caching, 
 or perhaps to use `UITableView`s internally.
 
