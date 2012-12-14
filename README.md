@@ -11,7 +11,8 @@ Accordion-style table view, with block-based delegation.
 
 ## Usage
 
-Very similar to `UITableView`, but uses `sections` and `tiles` instead of `sections` and `rows`. It also uses blocks instead of protocols for delegation.
+Very similar to `UITableView`, but uses `sections` and `tiles` instead of `sections` and `rows`. It also
+uses blocks instead of protocols for delegation.
 
 ### Examples
 
@@ -23,7 +24,8 @@ tiledView.numberOfSectionsBlock = ^NSInteger { return 4; };
 tiledViewdView.numberOfTilesInSectionBlock = ^NSInteger (NSInteger section) { return 20; };
 ```
 
-All `sections` and `tiles` are just `UIControl` subclasses, such as `UIButton` or a custom control of your making. (This may switch to UIView later, not sold on it yet).
+All `sections` and `tiles` are just `UIControl` subclasses, such as `UIButton` or a custom control of 
+your making. (This may switch to UIView later, not sold on it yet).
 
 ```objective-c
 tiledView.controlForSectionBlock = ^UIControl *(NSInteger section) {
@@ -66,7 +68,9 @@ on-the-fly and cached as rows are in UITableView. This shouldn't be a big deal u
 of tiles or tiles are extremely rendering intensive. Pull requests are more than welcome to help implement caching, 
 or perhaps to use `UITableView`s internally.
 
-This also means that `controlForSectionBlock` and `controlForTileAtIndexPathBlock` are not called multiple times, usually just once per call to `reloadData`.
+This also means that `controlForSectionBlock` and `controlForTileAtIndexPathBlock` are not called multiple times, 
+usually just once per call to `reloadData`. The `UIScrollView`s containing the tiles for the selected section are
+loaded lazily the first time and cached thereafter until the next call to `reloadData`.
 
 ## Contributing
 
