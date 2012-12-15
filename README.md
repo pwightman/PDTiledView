@@ -62,7 +62,7 @@ There are also optional blocks to further customize how you like. They match up 
 * `willDisplaySectionBlock` 
 * `willDisplayTileAtIndexPathBlock` (This is where you should apply styling that is `frame`-dependent, as its final dimensions will be set. Same with `willDisplaySectionBlock`)
 
-## Discussion
+## Implementation Details
 
 The internal implementation does not use `UITableView`s, so while some things are cached, tiles are not loaded 
 on-the-fly and cached as rows are in `UITableView`. This shouldn't be a big deal unless you are displaying 1,000s 
