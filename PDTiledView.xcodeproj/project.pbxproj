@@ -124,8 +124,8 @@
 			children = (
 				5F45E4791678664A00D5C39A /* PDTiledView */,
 				5F45E44A1678660B00D5C39A /* PDAppDelegate.h */,
-				5F45E44B1678660B00D5C39A /* PDAppDelegate.m */,
 				5F45E4531678660B00D5C39A /* MainStoryboard_iPhone.storyboard */,
+				5F45E44B1678660B00D5C39A /* PDAppDelegate.m */,
 				5F45E4561678660B00D5C39A /* MainStoryboard_iPad.storyboard */,
 				5F45E4591678660B00D5C39A /* PDViewController.h */,
 				5F45E45A1678660B00D5C39A /* PDViewController.m */,
@@ -404,6 +404,7 @@
 		5F45E4741678660B00D5C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -420,6 +421,7 @@
 		5F45E4751678660B00D5C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ROBERT WIGHTMAN (6M3BSZ6J39)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
