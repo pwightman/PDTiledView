@@ -9,6 +9,7 @@
 #import "PDViewController.h"
 #import "PDTiledView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <objc/message.h>
 
 @interface PDViewController ()
 @property (strong, nonatomic) IBOutlet PDTiledView *tiledView;
@@ -44,10 +45,10 @@
 		[sectionControl addSubview:label];
 		
 	};
-	
+  __block __typeof(self) _self = self;
 	_tiledView.controlForTileAtIndexPathBlock = ^UIControl *(PDIndexPath indexPath) {
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-		button.backgroundColor = [self randomColor];
+		button.backgroundColor = [_self randomColor];
 		button.layer.borderColor = [[UIColor blackColor] CGColor];
 		button.layer.borderWidth = 1;
 		return button;
@@ -68,11 +69,11 @@
 	_tiledView.heightForTilesInSectionBlock = ^CGFloat(NSInteger section) { return 60; };
 	
 	_tiledView.didSelectSectionBlock = ^(UIControl *sectionControl, NSInteger section) {
-		_alertLabel.text = [NSString stringWithFormat:@"Section selected: %d", section];
+		_self.alertLabel.text = [NSString stringWithFormat:@"Section selected: %d", section];
 	};
 	
 	_tiledView.didSelectTileAtIndexPathBlock = ^(UIControl *tile, PDIndexPath indexPath) {
-		_alertLabel.text = [NSString stringWithFormat:@"Section and tile selected: %d, %d", indexPath.section, indexPath.tile];
+		_self.alertLabel.text = [NSString stringWithFormat:@"Section and tile selected: %d, %d", indexPath.section, indexPath.tile];
 	};
 	
 	[_tiledView reloadData];
